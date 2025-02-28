@@ -26,9 +26,6 @@ const certifications = [
     },
 ];
 
-
-
-
 const certifications2 = [
     {
         image: "juniper.png",
@@ -54,9 +51,8 @@ const certifications2 = [
         image: "zedio.png",
         link: "https://github.com/PadalaDevisrisairam/MyCertifications/blob/main/ZIDIO%20INTERNSHIP%20CERTIFICATE.pdf",
         name: "zidio Certificate",
-    }
+    },
 ];
-
 
 const certifications3 = [
     {
@@ -81,7 +77,25 @@ const certifications3 = [
     },
 ];
 
-const CertificationPage = () => {
+const CertificationItem = ({ cert }) => (
+    <div className="p-4">
+        <a href={cert.link} target="_blank" rel="noopener noreferrer">
+            <div className="relative group rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 bg-gray-800 p-4">
+                <img
+                    src={cert.image}
+                    alt={cert.name}
+                    className="rounded-lg transition-transform transform hover:scale-105 border-4 border-yellow-400"
+                    loading="lazy"
+                />
+                <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg">
+                    <span className="text-white text-lg font-bold">{cert.name}</span>
+                </div>
+            </div>
+        </a>
+    </div>
+);
+
+const Certificationpage = () => {
     const settings = {
         dots: true,
         infinite: true,
@@ -91,112 +105,52 @@ const CertificationPage = () => {
         autoplay: true,
         autoplaySpeed: 2000,
         arrows: true,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: { slidesToShow: 2 },
+            },
+            {
+                breakpoint: 600,
+                settings: { slidesToShow: 1 },
+            },
+        ],
     };
 
-  
-
     return (
-        <div className="flex flex-col items-center justify-center min-h-screen bg-gray-900 text-white px-6 md:px-20">
-            <h1 className="text-4xl md:text-5xl font-bold mb-5 text-yellow-400">Certifications</h1>
+        <div className="min-h-screen bg-gradient-to-b from-gray-900 to-gray-800 text-white px-6 md:px-20 py-10">
+            <div className="max-w-5xl mx-auto">
+                <h1 className="text-4xl md:text-5xl font-bold mb-8 text-yellow-400 text-center">Certifications</h1>
 
-            <div className="w-full max-w-4xl bg-gray-700 mt-10 mb-10">
-                <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-gray-300 text-left">
-                    Language Certifications
-                </h2>
+                <div className="mb-10">
+                    <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-gray-300 text-left">Language Certifications</h2>
+                    <Slider {...settings}>
+                        {certifications.map((cert, index) => (
+                            <CertificationItem key={index} cert={cert} />
+                        ))}
+                    </Slider>
+                </div>
 
-                {/* Carousel */}
-                <Slider {...settings}>
-                    {certifications.map((cert, index) => (
-                        <div key={index} className="p-4">
-                            <a href={cert.link} target="_blank" rel="noopener noreferrer">
-                                {/* Wrapper with relative positioning for overlay effect */}
-                                <div className="relative group">
-                                    <img
-                                        src={cert.image}
-                                        alt={cert.name}
-                                        className="rounded-lg shadow-lg transition-transform transform hover:scale-105 border-4 border-yellow-400"
-                                    />
+                <div className="mb-10">
+                    <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-gray-300 text-left">Internship Certifications</h2>
+                    <Slider {...settings}>
+                        {certifications2.map((cert, index) => (
+                            <CertificationItem key={index} cert={cert} />
+                        ))}
+                    </Slider>
+                </div>
 
-                                    {/* Transparent Overlay with Certificate Name */}
-                                    <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg">
-                                        <span className="text-white text-lg font-bold">{cert.name}</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    ))}
-                </Slider>
+                <div className="mb-10">
+                    <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-gray-300 text-left">Workshop Certifications</h2>
+                    <Slider {...settings}>
+                        {certifications3.map((cert, index) => (
+                            <CertificationItem key={index} cert={cert} />
+                        ))}
+                    </Slider>
+                </div>
             </div>
-
-
-            <div className="w-full max-w-4xl bg-gray-700 mb-10">
-                <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-gray-300 text-left">
-                    Internship Certifications
-                </h2>
-
-                {/* Carousel */}
-                <Slider {...settings}>
-                    {certifications2.map((cert, index) => (
-                        <div key={index} className="p-4">
-                            <a href={cert.link} target="_blank" rel="noopener noreferrer">
-                                {/* Wrapper with relative positioning for overlay effect */}
-                                <div className="relative group">
-                                    <img
-                                        src={cert.image}
-                                        alt={cert.name}
-                                        className="rounded-lg shadow-lg transition-transform transform hover:scale-105 border-4 border-yellow-400"
-                                    />
-
-                                    {/* Transparent Overlay with Certificate Name */}
-                                    <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg">
-                                        <span className="text-white text-lg font-bold">{cert.name}</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    ))}
-                </Slider>
-            </div>
-
-
-
-
-            <div className="w-full max-w-4xl bg-gray-700 mb-10">
-                <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-gray-300 text-left">
-                    Workshop Certifications
-                </h2>
-
-                {/* Carousel */}
-                <Slider {...settings}>
-                    {certifications3.map((cert, index) => (
-                        <div key={index} className="p-4">
-                            <a href={cert.link} target="_blank" rel="noopener noreferrer">
-                                {/* Wrapper with relative positioning for overlay effect */}
-                                <div className="relative group">
-                                    <img
-                                        src={cert.image}
-                                        alt={cert.name}
-                                        className="rounded-lg shadow-lg transition-transform transform hover:scale-105 border-4 border-yellow-400"
-                                    />
-
-                                    {/* Transparent Overlay with Certificate Name */}
-                                    <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg">
-                                        <span className="text-white text-lg font-bold">{cert.name}</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    ))}
-                </Slider>
-            </div>
-
-
-
-
-
-
         </div>
     );
 };
 
-export default CertificationPage;
+export default Certificationpage;

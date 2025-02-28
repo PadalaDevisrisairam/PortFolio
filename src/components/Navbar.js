@@ -175,7 +175,7 @@ function Navbar() {
             </Link>
 
             <Link
-              to="/certifications"
+              to="/certification"
               className="block text-gray-300 hover:text-white px-3 py-2 rounded-md text-base font-medium transition duration-300 ease-in-out"
             >
               Certifications
