@@ -46,7 +46,7 @@ function Githubpage() {
                     <motion.img
                         src="github.png"
                         alt="Github Contributions Heatmap"
-                        className="w-full rounded-lg border-4 shadow-lg transition-transform duration-1000 transform hover:scale-105 hover:shadow-2xl hover:shadow-blue-600"
+                        className="w-full rounded-lg border-4 shadow-lg transition-transform duration-1000 transform hover:scale-105 hover:shadow-xl hover:shadow-white"
                         whileHover={{ scale: 1.1 }} // Slight hover effect
                     />
                 </a>

@@ -20,7 +20,7 @@ const Homepage = () => {
 
         <h2 className="text-2xl md:text-4xl font-semibold">
           I'm a{" "}
-          <span className="text-blue-400">
+          <span className="text-indigo-300">
             <ReactTyped
               strings={[
                 "Full Stack Developer",
