@@ -8,7 +8,7 @@ const ContactPage = () => {
       initial={{ opacity: 0, y: 50 }} // Moving animation when page loads
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 1 }}
-      className="flex flex-col items-center justify-center min-h-screen bg-gray-900 text-white px-6 md:px-20"
+      className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-br from-indigo-900 via-purple-800 to-pink-700 text-white px-6 md:px-20"
     >
       {/* Heading */}
       <motion.h1
@@ -112,7 +112,7 @@ const ContactPage = () => {
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
               type="submit"
-              className="w-full bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 rounded-md transition duration-300"
+              className="w-full bg-indigo-800 hover:bg-blue-600 text-white font-semibold py-2 rounded-md transition duration-300"
             >
               Send Message
             </motion.button>

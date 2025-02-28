@@ -10,7 +10,7 @@ const Codechefpage = () => {
 
   return (
     <motion.div
-      className="flex flex-col items-center justify-center min-h-screen bg-gray-900 text-white px-6 md:px-20"
+      className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-br from-indigo-900 via-purple-800 to-pink-700 text-white px-6 md:px-20"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1 }}

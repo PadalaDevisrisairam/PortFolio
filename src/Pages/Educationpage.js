@@ -26,7 +26,7 @@ const educationData = [
 function Educationpage() {
   return (
     <motion.div
-      className="flex flex-col items-center justify-center min-h-screen bg-gray-900 text-white px-6 md:px-20"
+      className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-br from-indigo-900 via-purple-800 to-pink-700 text-white px-6 md:px-20"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1 }}
@@ -48,12 +48,12 @@ function Educationpage() {
             className="flex items-center bg-gray-800 p-6 rounded-xl shadow-lg transition-transform duration-300 text-white" // Ensures text remains white
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: index * 0.4 }} // Sequential animation
+            transition={{ duration: 3.8, delay: index * 0.4 }} // Sequential animation
             whileHover={{
-              backgroundColor: "#2563eb", // Blue background color
+              backgroundColor: "indigo", // Blue background color
               color: "#fff", // All text remains white
               scale: 1.05,
-              transition: { duration: 0.5 }, // Smooth transition
+              transition: { duration: 4.9 }, // Smooth transition
             }}
           >
             {/* Left - React Icon (Graduation Cap) */}

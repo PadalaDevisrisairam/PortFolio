@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 const Homepage = () => {
   return (
-    <div className="flex flex-col md:flex-row items-center justify-center min-h-screen bg-gray-900 text-white px-6 md:px-20">
+    <div className="flex flex-col md:flex-row items-center justify-center min-h-screen bg-gradient-to-br from-indigo-900 via-purple-800 to-pink-700 text-white px-6 md:px-20">
       {/* Left Section */}
       <div className="text-center md:text-left md:w-1/2">
         {/* Animated Heading */}
@@ -62,7 +62,6 @@ const Homepage = () => {
             rel="noopener noreferrer"
             className="text-gray-300 hover:text-gray-100 text-3xl"
           >
-            
             <FaGithub />
           </a>
           <a
@@ -86,23 +85,23 @@ const Homepage = () => {
 
       {/* Right Section */}
       <div className="mt-10 md:mt-0 md:ml-10">
-      <motion.div
-        initial={{ opacity: 0, scale: 0.8 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 1.5, ease: "easeInOut" }}
-        className="relative group"
-      >
-        {/* Profile Image */}
-        <img
-          src="/portfoliopic2.jpg" // Update with your actual image path
-          alt="Sai Profile"
-          className="w-96 h-96 md:w-[400px] md:h-[400px] rounded-full shadow-lg transition-transform duration-300 ease-in-out group-hover:scale-105"
-        />
+        <motion.div
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 1.5, ease: "easeInOut" }}
+          className="relative group"
+        >
+          {/* Profile Image */}
+          <img
+            src="/portfoliopic2.jpg" // Update with your actual image path
+            alt="Sai Profile"
+            className="w-96 h-96 md:w-[400px] md:h-[400px] rounded-full shadow-lg transition-transform duration-300 ease-in-out group-hover:scale-105"
+          />
 
-        {/* Glowing Border Animation */}
-        <div className="absolute inset-0 rounded-full border-4 border-transparent animate-glow transition-all duration-300 ease-in-out group-hover:shadow-[0_0_30px_rgba(255,255,255,0.8)]"></div>
-      </motion.div>
-    </div>
+          {/* Glowing Border Animation */}
+          <div className="absolute inset-0 rounded-full border-4 border-transparent animate-glow transition-all duration-300 ease-in-out group-hover:shadow-[0_0_30px_rgba(255,255,255,0.8)]"></div>
+        </motion.div>
+      </div>
     </div>
   );
 };

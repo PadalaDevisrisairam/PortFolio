@@ -20,14 +20,14 @@ function Githubpage() {
 
     return (
         <motion.div
-            className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-r from-gray-800 via-gray-900 to-black text-white px-6"
+            className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-br from-purple-900 via-indigo-800 to-blue-900 text-white px-6"
             variants={containerVariants}
             initial="hidden"
             animate="visible"
         >
             {/* Animated Heading */}
             <motion.h1
-                className="text-4xl md:text-5xl font-bold mb-10 text-blue-600 shadow-lg"
+                className="text-4xl md:text-5xl font-bold mb-10 text-white shadow-lg"
                 variants={itemVariants}
             >
                 Github Contributions

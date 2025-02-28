@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const Aboutpage = () => {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-900 text-white px-6 md:px-20">
+    <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-br from-indigo-900 via-purple-800 to-pink-700 text-white px-6 md:px-20">
       {/* Heading */}
       <motion.h1
         initial={{ opacity: 0, y: -50 }}

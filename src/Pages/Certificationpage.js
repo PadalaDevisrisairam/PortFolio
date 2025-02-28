@@ -78,7 +78,7 @@ const certifications3 = [
 ];
 
 const CertificationItem = ({ cert }) => (
-    <div className="p-4">
+    <div className="p-4 ">
         <a href={cert.link} target="_blank" rel="noopener noreferrer">
             <div className="relative group rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 bg-gray-800 p-4">
                 <img
@@ -118,7 +118,7 @@ const Certificationpage = () => {
     };
 
     return (
-        <div className="min-h-screen bg-gradient-to-b from-gray-900 to-gray-800 text-white px-6 md:px-20 py-10">
+        <div className="min-h-screen bg-gradient-to-br from-indigo-900 via-purple-800 to-pink-700 text-white px-6 md:px-20 py-10">
             <div className="max-w-5xl mx-auto">
                 <h1 className="text-4xl md:text-5xl font-bold mb-8 text-yellow-400 text-center">Certifications</h1>
 
