@@ -28,12 +28,59 @@ function Navbar() {
             >
               About
             </Link>
+
+            <Link
+              to="/skills"
+              className="text-gray-300 hover:text-white transition duration-300 ease-in-out px-3 py-2 rounded-lg text-sm font-medium"
+            >
+              Skills
+            </Link>
+
+
+
             <Link
               to="/projects"
               className="text-gray-300 hover:text-white transition duration-300 ease-in-out px-3 py-2 rounded-lg text-sm font-medium"
             >
               Projects
             </Link>
+
+            <Link
+              to="/github"
+              className="text-gray-300 hover:text-white transition duration-300 ease-in-out px-3 py-2 rounded-lg text-sm font-medium"
+            >
+              Github
+            </Link>
+
+            <Link
+              to="/codechef"
+              className="text-gray-300 hover:text-white transition duration-300 ease-in-out px-3 py-2 rounded-lg text-sm font-medium"
+            >
+              Codechef
+            </Link>
+
+            <Link
+              to="/experience"
+              className="text-gray-300 hover:text-white transition duration-300 ease-in-out px-3 py-2 rounded-lg text-sm font-medium"
+            >
+              Experience
+            </Link>
+
+            <Link
+              to="/certification"
+              className="text-gray-300 hover:text-white transition duration-300 ease-in-out px-3 py-2 rounded-lg text-sm font-medium"
+            >
+              Certification
+            </Link>
+
+            <Link
+              to="/education"
+              className="text-gray-300 hover:text-white transition duration-300 ease-in-out px-3 py-2 rounded-lg text-sm font-medium"
+            >
+              Education
+            </Link>
+
+
             <Link
               to="/contacts"
               className="text-gray-300 hover:text-white transition duration-300 ease-in-out px-3 py-2 rounded-lg text-sm font-medium"
@@ -91,11 +138,47 @@ function Navbar() {
             >
               About
             </Link>
+
+            <Link
+              to="/skills"
+              className="block text-gray-300 hover:text-white px-3 py-2 rounded-md text-base font-medium transition duration-300 ease-in-out"
+            >
+              Skills
+            </Link>
+
             <Link
               to="/projects"
               className="block text-gray-300 hover:text-white px-3 py-2 rounded-md text-base font-medium transition duration-300 ease-in-out"
             >
               Projects
+            </Link>
+
+            <Link
+              to="/github"
+              className="block text-gray-300 hover:text-white px-3 py-2 rounded-md text-base font-medium transition duration-300 ease-in-out"
+            >
+              Github
+            </Link>
+
+            <Link
+              to="/codechef"
+              className="block text-gray-300 hover:text-white px-3 py-2 rounded-md text-base font-medium transition duration-300 ease-in-out"
+            >
+              Codechef
+            </Link>
+
+            <Link
+              to="/experience"
+              className="block text-gray-300 hover:text-white px-3 py-2 rounded-md text-base font-medium transition duration-300 ease-in-out"
+            >
+              Experience
+            </Link>
+
+            <Link
+              to="/certifications"
+              className="block text-gray-300 hover:text-white px-3 py-2 rounded-md text-base font-medium transition duration-300 ease-in-out"
+            >
+              Certifications
             </Link>
             <Link
               to="/contacts"
