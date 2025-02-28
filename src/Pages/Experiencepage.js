@@ -49,7 +49,7 @@ function ExperiencePage() {
                     }}
                     className="flex items-center space-x-6 bg-white bg-opacity-10 p-6 rounded-lg shadow-lg"
                 >
-                    <FaLaptopCode className="text-yellow-300 text-4xl" />
+                    <FaLaptopCode className="text-yellow-300 text-4xl" />    
                     <div>
                         <h2 className="text-2xl font-semibold">Full Stack Developer Intern</h2>
                         <p className="text-lg text-gray-200">Zidio Development | May 2024 - Aug 2024</p>
