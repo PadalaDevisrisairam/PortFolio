@@ -5,7 +5,7 @@ function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-gradient-to-r from-gray-900 to-gray-800 shadow-md">
+    <nav className="bg-gradient-to-r from-blue-900 to-red-400 shadow-md animated-gradient">
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center h-16">
           {/* Logo / Brand */}
