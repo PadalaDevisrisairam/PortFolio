@@ -29,8 +29,9 @@ function App() {
         <Route path="/certification" element={<Certificationpage/>}/>
         <Route path="/education" element={<Educationpage/>}/>
       </Routes>
+    
      </Router>
-   
+     
     </div>
   );
 }

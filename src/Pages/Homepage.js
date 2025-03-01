@@ -93,7 +93,7 @@ const Homepage = () => {
         >
           {/* Profile Image */}
           <img
-            src="/portfoliopic2.jpg" // Update with your actual image path
+            src="./portfoliopic2.jpg" // Update with your actual image path
             alt="Sai Profile"
             className="w-96 h-96 md:w-[400px] md:h-[400px] rounded-full shadow-lg transition-transform duration-300 ease-in-out group-hover:scale-105"
           />
