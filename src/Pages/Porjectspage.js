@@ -29,7 +29,7 @@ const Projectspage = () => {
     };
 
     return (
-        <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-br from-indigo-900 via-purple-800 to-pink-700 text-white px-6 py-12">
+        <div className="flex flex-col items-center justify-center min-h-screen  bg-gradient-to-br from-blue-900 via-gray-900 to-black text-white px-6 py-12">
             <motion.h1 
                 initial={{ opacity: 0, scale: 0.8 }}
                 animate={{ opacity: 1, scale: 1 }}

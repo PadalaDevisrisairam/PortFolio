@@ -32,7 +32,7 @@ const skills = [
 const Skillspage = () => {
   return (
     <motion.div 
-      className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-br from-purple-900 via-indigo-800 to-blue-900 text-white px-6 md:px-20 overflow-hidden"
+      className="flex flex-col items-center justify-center min-h-screen  bg-gradient-to-br from-blue-900 via-gray-900 to-black text-white px-6 md:px-20 overflow-hidden"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1 }}

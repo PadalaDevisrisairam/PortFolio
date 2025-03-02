@@ -8,7 +8,7 @@ const ContactPage = () => {
       initial={{ opacity: 0, y: 50 }} // Moving animation when page loads
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 1 }}
-      className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-br from-indigo-900 via-purple-800 to-pink-700 text-white px-6 md:px-20"
+      className="flex flex-col items-center justify-center min-h-screen  bg-gradient-to-br from-blue-900 via-gray-900 to-black text-white px-6 md:px-20"
     >
       {/* Heading */}
       <motion.h1

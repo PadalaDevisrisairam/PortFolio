@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 const Homepage = () => {
   return (
-    <div className="flex flex-col md:flex-row items-center justify-center min-h-screen bg-gradient-to-br from-indigo-900 via-purple-800 to-pink-700 text-white px-6 md:px-20">
+    <div className="flex flex-col md:flex-row items-center justify-center min-h-screen  bg-gradient-to-br from-blue-900 via-gray-900 to-black text-white px-6 md:px-20">
       {/* Left Section */}
       <div className="text-center md:text-left md:w-1/2">
         {/* Animated Heading */}
